@@ -1,75 +1,61 @@
 
-/* benefits-work */
-
-.benefits,
-.work{
-    background-color: var(--white-color);
-}
-/* work team */
-
-.work .tittle,
-.team .tittle{
-    margin-top: 0;
-    margin-bottom: 50px;
-}
-
-/* benefits */
 .benefits{
     padding-top: 94px;
     padding-bottom: 94px;
+    &__icon-wrapper{
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: var(--team-background) ;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+    &__tittle{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__list .item{
+        width: 270px;
+    }
+    &__list .item{
+        width: calc((100% - 90px) / 4);
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    &__list .item:nth-child(4n){
+        margin-right: 0;
+
+    }
+    &__list .item:nth-last-child(-n +4){
+        margin-bottom: 0;
+    }
+    &__subtittle{
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        color: var(--main-color-tittle);
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    &__text{
+        color: inherit;
+        line-height: 1.71;
+    }
    
 }
 
-/* -------benefitn-icon-------- */
-.benefits .icon-wrapper{
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    background-color: var(--team-background) ;
-    border-radius: 4px;
-    margin-bottom: 30px;
-}
 
-/* -------------------------------------- */
 
-.benefits .tittle{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.benefits .list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
 
-}
-.benefits .list .item{
-     width: 270px;
-}
-.benefits-list .item{
-   
-    // width: calc((100% - 90px) / 4);
-    // margin-right: 30px;
-    // margin-bottom: 30px;
-}
-// .benefits-list .item:nth-child(4n){
-//      margin-right: 0;
 
-// }
-// .benefits-list .item:nth-last-child(-n +4){
-//     margin-bottom: 0;
-// }
-.benefits .subtittle{
-    margin-top: 0;
-    margin-bottom: 10px;
 
-    color: var(--main-color-tittle);
-    font-size: 14px;
-    text-transform: uppercase;
-}
-.benefits .text{
 
-    color: inherit;
-    line-height: 1.71;
-}
+
+
